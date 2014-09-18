@@ -1,0 +1,92 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Andada', sans-serif;
+    font-weight: 400;
+}
+.anchor {
+    margin-left: 0.3em;
+}
+
+.highlight, pre {
+    margin-bottom: 1em;
+}
+
+body {
+    background: #333;
+    background-image: url('../images/dark_Tire.png');
+}
+a {
+    color: rgb(89, 172, 0);
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    background: #bbb;
+    background-image: url('../images/gplaypattern.png');
+}
+
+.main {
+    background: #ebebeb;
+    background-image: url('../images/farmer.png');
+}
+
+footer {
+    background: #646464;
+    background-image: url('../images/low_contrast_linen.png');
+    color: #ccc;
+
+    padding-top: 1em;
+}
+footer a {
+    color: rgb(183, 247, 114);
+}
+
+#fork {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+.picture {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.caption {
+    margin-bottom: 0;
+}
+
+.license {
+    border-width: 0;
+}
+
+.sidebar {
+    box-sizing: border-box;
+    background: #eee;
+
+    position: fixed;
+
+    height: 50%;
+
+    overflow: auto;
+
+    padding: 1em;
+
+    border-radius: 0.2em;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+.sidebar .toc {
+    margin: 0;
+}
+.sidebar .social li {
+    display: inline;
+}
