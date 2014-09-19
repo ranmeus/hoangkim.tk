@@ -9,6 +9,7 @@ image:
   feature:
 date: 2014-09-19T14:50:39+02:00
 comments: true
+share: true
 ---
 
 What?? Again? I thought i told you everything on the [About][1] page. This site has serveral web technologies, so I am still learning. Be patient!
