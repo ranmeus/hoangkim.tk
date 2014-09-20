@@ -90,4 +90,4 @@ From the perpective of other people they just send to and receive from *master@m
 
 ## Last words
 
-With money you can have all these at your provider. With less money you still can have a package which cries for perfection. The flexibility isn't garanteed in the 1st case either. And with no money... well, all you got is a ~~broken~~ decoupled system and works to do.
+With money you can have all these at your provider. With less money you still can have a package which cries for perfection. The flexibility isn't garanteed in the 1st case either. And with no money... well, all you got is a <del>broken</del> decoupled system and works to do.
