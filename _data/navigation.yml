@@ -9,14 +9,12 @@
 - title: Blog
   url: /blog/
 
-- title: Ghost
-  url: http://blog.hoangkim.tk
+#- title: Ghost
+#  url: http://blog.hoangkim.tk
   
-- title: Owncloud
-  url: https://popomedia.deltasystem.eu/owncloud
+#- title: Owncloud
+#  url: https://popomedia.deltasystem.eu/owncloud
   
-- title: Popo
-  url: https://popomedia.deltasystem.eu
+#- title: Popo
+#  url: https://popomedia.deltasystem.eu
   
-- title: Email
-  url: http://email.hoangkim.tk
