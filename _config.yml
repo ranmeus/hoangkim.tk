@@ -1,5 +1,6 @@
 # Site wide configuration
 
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
 title: Experimenting ideas
 locale: en_US
 description: Every adventure begins with an idea.
