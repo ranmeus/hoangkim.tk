@@ -6,7 +6,6 @@ categories: articles
 excerpt:
 tags: [free, hosted email, domain, DNS, DDNS]
 image:
-  feature:
 date: 2014-09-20T14:02:14+02:00
 comments: true
 share: true

@@ -6,7 +6,6 @@ categories: blog
 excerpt:
 tags: [introduction]
 image:
-  feature:
 date: 2014-09-19T14:50:39+02:00
 comments: true
 share: true
