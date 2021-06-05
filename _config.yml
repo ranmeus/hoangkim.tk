@@ -22,7 +22,7 @@ description: "Every adventure begins with an idea."
 logo: /images/viky.jpg
 baseurl: # the subpath of your site, e.g. "/blog"
 url: https://hoangkim.tk
-resources: http://ranmeus.byethost33.com
+resources: https://ranmeus.byethost33.com
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
