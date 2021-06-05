@@ -1,28 +1,32 @@
-# [So Simple Jekyll Theme][1]
+# So Simple Theme
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat-square)](https://raw.githubusercontent.com/mmistakes/so-simple-theme/master/LICENSE)
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.6-blue.svg?style=flat-square)](https://jekyllrb.com/)
-[![Ruby gem](https://img.shields.io/gem/v/jekyll-theme-so-simple.svg?style=flat-square)](https://rubygems.org/gems/jekyll-theme-so-simple)
-[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip%20me-green.svg?style=flat-square&logo=paypal)](https://www.paypal.me/mmistakes)
+Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the followup to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes/) -- by designer slash illustrator [Michael Rose](http://mademistakes.com).
 
-So Simple is a simple [Jekyll theme](https://jekyllrb.com/docs/themes/) for your words and pictures. Built to provide:
+[![Build Status](https://travis-ci.org/mmistakes/so-simple-theme.svg?branch=master)](https://travis-ci.org/mmistakes/so-simple-theme)
 
-* A variety of layouts with clean and readable typography.
-* [Microformats](http://microformats.org/wiki/microformats2) markup to make post content machine-readable and discoverable.
-* Disqus Comments and Google Analytics support.
-* SEO best practices via [Jekyll SEO Tag][jekyll-seo-tag].
-* Options to customize the theme and make it your own.
+## So Simple Theme is all about:
 
+<<<<<<< HEAD
 **If you enjoy this theme, please consider [supporting me](https://www.paypal.me/mmistakes) for developing and maintaining it.**
 
 [![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/mmistakes)
 
 :sparkles: **See what's new in the [CHANGELOG](CHANGELOG.md).**
+=======
+* Responsive templates. Looking good on mobile, tablet, and desktop.
+* Gracefully degrading in older browsers. Compatible with Internet Explorer 9+ and all modern browsers.
+* Minimal embellishments and subtle animations.
+* Optional large feature images for posts and pages.
+* [Custom 404 page](http://mmistakes.github.io/so-simple-theme/404.html) to get you started.
+* [Simple site search](https://github.com/christian-fei/Simple-Jekyll-Search)
+* Support for Disqus Comments
+>>>>>>> parent of 46f4095 (add latest Jekyll update (June 2018))
 
-:blue_book: **[v2 documentation](README-OLD.md)**.
+![screenshot of So Simple Theme](http://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
 
-[![So Simple live preview][2]][1]
+See a [live version of So Simple](http://mmistakes.github.io/so-simple-theme/) hosted on GitHub.
 
+<<<<<<< HEAD
 ![So Simple layouts](screenshots.jpg)
 
 [1]: https://mmistakes.github.io/so-simple-theme/
@@ -556,141 +560,13 @@ This theme provides the following layouts, which you can use by setting the `lay
 ```yaml
 ---
 layout: name
+=======
+>>>>>>> parent of 46f4095 (add latest Jekyll update (June 2018))
 ---
-```
 
-### `layout: default`
+## Getting Started
 
-This layout handles all of the basic page scaffolding placing the page content between the masthead and footer elements. All other layouts inherit this one and provide additional styling and features inside of the `{{ content }}` block.
-
-### `layout: post`
-
-This layout accommodates the following front matter:
-
-| Name | Type | Description |
-| ---- | ----- | ---------- |
-| `image` | String | Path to a large image associated with the post. Also used for [OpenGraph](http://ogp.me/), [Twitter Cards](https://dev.twitter.com/cards), and site feed thumbnail if enabled. [Suggested image sizes](#images). |
-| `image.path` | String | Same as above. Used when a `thumbnail` or `caption` needs to be assigned to the `image` object as well. |
-| `image.caption` | String | Describes the image or provides credit. Markdown is allowed. |
-| `author` | Object or string | Specify a post's author `name`, `picture`, `twitter`, `links`, etc. |
-| `comments` | Boolean | Disable comments with `comments: false`. |
-| `share` | Boolean | Add social share links to a post with `share: true`. |
-
-**Post image example:**
-
-```yaml
-image:
-  path: /images/post-image-lg.jpg
-  thumbnail: /images/post-image-th.jpg
-  caption: "Photo credit [Unsplash](https://unsplash.com/)"
-```
-
-**Note:** `image.feature` front matter has been deprecated, to fully support [jekyll-seo-tag][jekyll-seo-tag]. If you are not using `thumbnail` or `caption` the post image can be assigned more concisely as `image: /images/your-post-image.jpg`.
-
-**Post author example:**
-
-```yaml
-# post specific author data if different from what is set in _config.yml
-author:
-  name: John Doe
-  picture: /images/john-doe.jpg
-  twitter: johndoe
-```
-
-**Note:** Author information can centralized in `_data/authors.yml` by doing following in the document's front matter:
-
-```yaml
-author: johndoe
-```
-
-With the corresponding author key in `_data/authors.yml`:
-
-```yaml
-johndoe:
-  name: John Doe
-  picture: /images/john-doe.jpg
-  twitter: johndoe
-```
-
-**Note:** `author.picture` recommended size is `150 x 150` pixels.
-
-#### Author Links
-
-To define what links appear in the author sidebar use the `authors.links` key in either `_config.yml` or `/_data/authors.yml`.
-
-| Name    | Description                                                                                                      |
-| ------- | ---------------------------------------------------------------------------------------------------------------- |
-| `title` | Describes the link. Not visible, used for accessibility purposes.                                                |
-| `url`   | URL the link points to.                                                                                          |
-| `icon`  | Corresponds with a [Font Awesome icon](https://fontawesome.com/icons?d=gallery) e.g., `fab fa-twitter-square`.   |
-
-**Example:**
-
-```yaml
-author:
-  links:
-    - title: Twitter
-      url: https://twitter.com/username
-      icon: fab fa-twitter-square
-    - title: Instagram
-      url: https://instagram.com/username
-      icon: fab fa-instagram
-    - title: GitHub
-      url: https://github.com/username
-      icon: fab fa-github-square
-```
-
-**Note:** To disable author links completely use use:
-
-```yaml
-author:
-  links: false
-```
-
-### `layout: page`
-
-Visually this layout looks and acts similar `layout: post`, with the following
-differences.
-
-* Author sidebar and page meta (published date, categories, and tags) are ommitted.
-* Page is less wide due to omitted sidebar.
-* Disqus comments are omitted.
-* Next/Previous post navigation links omitted.
-
-The page layout forms the base for several other layouts like [`home`](#layout-home), [`posts`](#layout-posts), [`categories`](#layout-categories), [`tags`](#layout-tags), [`collection`](#layout-collection), [`category`](#layout-category), [`tag`](#layout-tag), and [`search`](#layout-search).
-
-### `layout: home`
-
-This layout accommodates the same front matter as `layout: page`, with the
-addition of the following:
-
-```yaml
-paginate: true  # enables pagination loop, see section above for additional setup
-entries_layout: # list (default), grid
-```
-
-When pagination is not enabled the page defaults to showing the latest 10 posts. To change the amount of posts shown, assign a limit value by adding the following to the page's front matter.
-
-```yaml
-posts_limit: 5
-```
-
-By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
-
-### `layout: posts`
-
-This layout displays all posts grouped by the year they were published. It accommodates the same front matter as `layout: page`.
-
-By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
-
-### `layout: categories`
-
-This layout displays all posts grouped category. It accommodates the same front matter as `layout: page`.
-
-By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
-
-### `layout: tags`
-
+<<<<<<< HEAD
 This layout displays all posts grouped by tag. It accommodates the same front matter as `layout: page`.
 
 By default, posts are shown in a list view. To change to a grid view add `entries_layout: grid` to the page's front matter.
@@ -1240,9 +1116,13 @@ When submitting a pull request:
 * [Lunr](http://lunrjs.com/)
 
 ---
+=======
+So Simple takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
+>>>>>>> parent of 46f4095 (add latest Jekyll update (June 2018))
 
-## License
+To learn how to install and use this theme check out the [Setup Guide](http://mmistakes.github.io/so-simple-theme/theme-setup/) for more information.
 
+<<<<<<< HEAD
 The MIT License (MIT)
 
 Copyright (c) 2013-2019 Michael Rose and contributors
@@ -1292,9 +1172,7 @@ Lity is distributed under the terms of the MIT License](http://opensource.org/li
 So Simple incorporates [Table of Contents Toggle](https://github.com/smithtimmytim/brightlycolored.org),
 Copyright (c) 2017 Timothy B. Smith.
 Table of Contents Toggle is distributed under the terms of the MIT License](http://opensource.org/licenses/MIT).
+=======
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+>>>>>>> parent of 46f4095 (add latest Jekyll update (June 2018))
 
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[jekyll-paginate]: https://github.com/jekyll/jekyll-paginate
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-archives]: https://github.com/jekyll/jekyll-archives
